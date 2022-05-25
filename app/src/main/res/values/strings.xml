@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Learn_and_test</string>
+    <string name="Homebtn1">Learning</string>
+    <string name="titleName">Learn and Grow</string>
+    <string name="Homebtn2">Quiz</string>
+    <string name="Homebtn3">GitHub</string>
+    <string name="R1_B1">A</string>
+    <string name="R1_B2">B</string>
+    <string name="R1_B3">C</string>
+    <string name="R1_B4">D</string>
+    <string name="R2_B1">E</string>
+    <string name="R2_B2">F</string>
+    <string name="R2_B3">G</string>
+    <string name="R2_B4">H</string>
+    <string name="R3_B1">I</string>
+    <string name="R3_B2">J</string>
+    <string name="R3_B3">K</string>
+    <string name="R3_B4">L</string>
+    <string name="R4_B1">M</string>
+    <string name="R4_B2">N</string>
+    <string name="R4_B3">O</string>
+    <string name="R4_B4">P</string>
+    <string name="R5_B1">Q</string>
+    <string name="R5_B2">R</string>
+    <string name="R5_B3">S</string>
+    <string name="R5_B4">T</string>
+    <string name="R6_B1">U</string>
+    <string name="R6_B2">V</string>
+    <string name="R6_B3">W</string>
+    <string name="R6_B4">X</string>
+    <string name="R7_B1">Y</string>
+    <string name="R7_B2">Z</string>
+
+
+</resources>
