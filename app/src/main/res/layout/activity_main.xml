@@ -53,9 +53,21 @@
                 android:layout_height="85dp"
                 android:layout_marginLeft="6dp"
                 android:background="#FDD835"
-                android:backgroundTint="#36A5A1"
+                android:backgroundTint="#F6FAFA"
                 android:text="@string/Homebtn3"
-                android:textColor="#607D8B"
+                android:textColor="#FDFEFF"
+                android:textSize="20sp"
+                tools:ignore="TextContrastCheck" />
+
+            <Button
+                android:id="@+id/learnList"
+                android:layout_width="343dp"
+                android:layout_height="85dp"
+                android:layout_marginLeft="6dp"
+                android:background="#FDD835"
+                android:backgroundTint="#36A5A1"
+                android:text="@string/Homebtn4"
+                android:textColor="#F5FFFFFF"
                 android:textSize="20sp" />
 
         </LinearLayout>
