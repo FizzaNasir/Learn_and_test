@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android:androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#A0F4A4"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity" layout_height="0dp" layout_width="0dp" >
 
     <ScrollView
         android:layout_width="match_parent"
@@ -53,11 +54,10 @@
                 android:layout_height="85dp"
                 android:layout_marginLeft="6dp"
                 android:background="#FDD835"
-                android:backgroundTint="#F6FAFA"
+                android:backgroundTint="#36A5A1"
                 android:text="@string/Homebtn3"
-                android:textColor="#FDFEFF"
-                android:textSize="20sp"
-                tools:ignore="TextContrastCheck" />
+                android:textColor="#607D8B"
+                android:textSize="20sp" />
 
             <Button
                 android:id="@+id/learnList"
@@ -67,9 +67,9 @@
                 android:background="#FDD835"
                 android:backgroundTint="#36A5A1"
                 android:text="@string/Homebtn4"
-                android:textColor="#F5FFFFFF"
+                android:textColor="#607D8B"
                 android:textSize="20sp" />
 
         </LinearLayout>
     </ScrollView>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</android:androidx.constraintlayout.widget.ConstraintLayout>
