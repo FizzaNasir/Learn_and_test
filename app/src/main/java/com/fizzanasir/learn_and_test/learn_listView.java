@@ -2,13 +2,17 @@ package com.fizzanasir.learn_and_test;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 
 public class learn_listView extends AppCompatActivity {
-
+    ListView listView;
+    AlphAdaptor adaptor;
     public static ArrayList<learning_list> alphList=new ArrayList<learning_list>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,7 +20,7 @@ public class learn_listView extends AppCompatActivity {
         setContentView(R.layout.activity_learn_list_view);
         setUpData();
         setUpList();
-//      setUpOnclickListner();
+      setUpOnclickListner();
     }
 
     private void setUpData()
@@ -47,14 +51,50 @@ public class learn_listView extends AppCompatActivity {
         learning_list alphX=new learning_list(23, R.drawable.x, "X");
         learning_list alphY=new learning_list(24, R.drawable.y, "Y");
         learning_list alphZ=new learning_list(25, R.drawable.z, "Z");
+        alphList.add(alphA);
+        alphList.add(alphB);
+        alphList.add(alphC);
+        alphList.add(alphD);
+        alphList.add(alphE);
+        alphList.add(alphF);
+        alphList.add(alphG);
+        alphList.add(alphH);
+        alphList.add(alphI);
+        alphList.add(alphJ);
+        alphList.add(alphK);
+        alphList.add(alphM);
+        alphList.add(alphN);
+        alphList.add(alphO);
+        alphList.add(alphP);
+        alphList.add(alphQ);
+        alphList.add(alphR);
+        alphList.add(alphS);
+        alphList.add(alphT);
+        alphList.add(alphU);
+        alphList.add(alphV);
+        alphList.add(alphW);
+        alphList.add(alphX);
+        alphList.add(alphY);
+        alphList.add(alphZ);
+
     }
     private void setUpList()
     {
-        ListView listView=findViewById(R.id.listOfAlphs);
-        AlphAdaptor adaptor=new AlphAdaptor(getApplicationContext(), 0, alphList);
+        listView=findViewById(R.id.listOfAlphs);
+        adaptor=new AlphAdaptor(getApplicationContext(), 0, alphList);
         listView.setAdapter(adaptor);
     }
-//    private void setUpOnclickListner()
-//    {}
+    private void setUpOnclickListner()
+    {
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                learning_list alphabets=(learning_list) (listView.getItemAtPosition(position));
+                Intent showDetail = new Intent(getApplicationContext(), DetailActivity.class);
+                showDetail.putExtra("id", alphabets.getId());
+                startActivity(showDetail);
+            }
+        });
+    }
 
 }

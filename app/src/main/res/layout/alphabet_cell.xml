@@ -7,8 +7,8 @@
 
     <ImageView
         android:id="@+id/cellimg"
-        android:layout_width="136dp"
-        android:layout_height="130dp"
+        android:layout_width="193dp"
+        android:layout_height="178dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="4dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,7 +21,9 @@
         android:layout_height="127dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="164dp"
+        android:gravity="center"
         android:text="TextView"
+        android:textSize="60sp"
         app:layout_constraintEnd_toStartOf="@+id/cellimg"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"

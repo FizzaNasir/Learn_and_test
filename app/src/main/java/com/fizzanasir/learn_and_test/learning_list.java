@@ -15,6 +15,14 @@ public class learning_list {
         return imageid;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public void setImageid(int imageid) {
         this.imageid = imageid;
     }

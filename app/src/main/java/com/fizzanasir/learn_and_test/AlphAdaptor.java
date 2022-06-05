@@ -1,6 +1,7 @@
 package com.fizzanasir.learn_and_test;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,16 +27,17 @@ public class AlphAdaptor extends ArrayAdapter<learning_list> {
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        learning_list alphabet_list=getItem(position);
-        if(convertView==null)
-        {
-            convertView= LayoutInflater.from(getContext()).inflate(R.layout.alphabet_cell, parent, false);
+        learning_list alphabet_list = getItem(position);
+        if (convertView == null) {
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.alphabet_cell, parent, false);
         }
-        TextView tv=convertView.findViewById(R.id.alph);
-        ImageView iv=convertView.findViewById(R.id.cellimg);
+        TextView tv = convertView.findViewById(R.id.alph);
+        ImageView iv = convertView.findViewById(R.id.cellimg);
         tv.setText(alphabet_list.getAlphabet());
         iv.setImageResource(alphabet_list.getImageid());
 
+
         return convertView;
+
     }
 }
