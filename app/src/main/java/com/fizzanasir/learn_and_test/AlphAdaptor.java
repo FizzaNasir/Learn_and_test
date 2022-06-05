@@ -35,9 +35,19 @@ public class AlphAdaptor extends ArrayAdapter<learning_list> {
         ImageView iv = convertView.findViewById(R.id.cellimg);
         tv.setText(alphabet_list.getAlphabet());
         iv.setImageResource(alphabet_list.getImageid());
-
-
-        return convertView;
+        tv.setOnClickListener(new View.OnClickListener() {
+                                            @Override
+                                            public void onClick(View view) {
+//                                                Log.d("Name", students.getName());
+//                                                Intent intent=new Intent(this, MainActivity.class); //we are inside a class and not in an activity
+                                                //therefore we cant write this
+                                                Intent intent=new Intent(getContext(), DetailActivity.class);
+                                                intent.putExtra("id", alphabet_list.getId());
+                                                getContext().startActivity(intent);
+                                            }
+                                        }
+        );
+            return convertView;
 
     }
 }

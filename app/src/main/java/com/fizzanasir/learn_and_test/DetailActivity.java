@@ -18,8 +18,8 @@ public class DetailActivity extends AppCompatActivity {
     }
     public void getSelectedAlphabet()
     {
-        String prevIntent=getIntent().getStringExtra("id");
-        alphs=learn_listView.alphList.get(Integer.parseInt(prevIntent));
+        String prevIntenttostr=getIntent().getStringExtra("id");
+        alphs=learn_listView.alphList.get(Integer.valueOf(prevIntenttostr));
     }
     public void setValues()
     {

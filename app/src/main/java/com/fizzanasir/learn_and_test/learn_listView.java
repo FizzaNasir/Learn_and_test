@@ -20,7 +20,7 @@ public class learn_listView extends AppCompatActivity {
         setContentView(R.layout.activity_learn_list_view);
         setUpData();
         setUpList();
-      setUpOnclickListner();
+//        setUpOnclickListner();
     }
 
     private void setUpData()
@@ -62,6 +62,7 @@ public class learn_listView extends AppCompatActivity {
         alphList.add(alphI);
         alphList.add(alphJ);
         alphList.add(alphK);
+        alphList.add(alphL);
         alphList.add(alphM);
         alphList.add(alphN);
         alphList.add(alphO);
@@ -84,17 +85,15 @@ public class learn_listView extends AppCompatActivity {
         adaptor=new AlphAdaptor(getApplicationContext(), 0, alphList);
         listView.setAdapter(adaptor);
     }
-    private void setUpOnclickListner()
-    {
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                learning_list alphabets=(learning_list) (listView.getItemAtPosition(position));
-                Intent showDetail = new Intent(getApplicationContext(), DetailActivity.class);
-                showDetail.putExtra("id", alphabets.getId());
-                startActivity(showDetail);
-            }
-        });
-    }
-
+//    private void setUpOnclickListner()
+//    {
+//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+//                learning_list alphabets=(learning_list) (listView.getItemAtPosition(position));
+//                Intent showDetail = new Intent(getApplicationContext(), DetailActivity.class);
+//                showDetail.putExtra("id", alphabets.getId());
+//                startActivity(showDetail);
+//            }
+//        });
 }
